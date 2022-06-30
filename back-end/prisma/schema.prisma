@@ -24,4 +24,5 @@ model Author {
   name  String @unique
   bio String @default("")
   blogs Blog[]
+  createdAt DateTime @default(now())
 }

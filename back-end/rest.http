@@ -1,0 +1,46 @@
+GET http://localhost:3001/api/blogs  
+###
+
+GET http://localhost:3001/api/blogs/1
+###
+
+DELETE http://localhost:3001/api/blogs/2
+###
+
+PATCH http://localhost:3001/api/blogs/3
+Content-Type: application/json
+
+{
+    "title": "Updated Title",
+    "details" : "This is the updated details of the blog! Sample Sample Lorem ipsum"
+}
+
+###
+
+
+POST http://localhost:3001/api/blogs  
+Content-Type: application/json
+
+{
+    "title" : "Flutter is awesome!",
+    "details":"This is the details data",
+    "authorId":1
+}
+###
+
+GET http://localhost:3001/api/authors  
+###
+
+GET http://localhost:3001/api/authors/1
+###
+
+
+POST http://localhost:3001/api/authors  
+Content-Type: application/json
+
+{
+    "name" : "Ali Iktider Sayam",
+    "bio": "CEO & Co-founder at NerdEvolution"
+}
+###
+
